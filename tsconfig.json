@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist"
+
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "files": ["node_modules/jest-expect-message/types/index.d.ts"]
+}
