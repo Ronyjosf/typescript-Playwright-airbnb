@@ -12,6 +12,9 @@ export class ElementHelper {
             const textContent: string = await locator.textContent();
             return textContent.includes(searchText);
         });
+        // const ele =locators.filter( async (locator: Locator) => !(await locator.textContent()).includes(searchText) )
+        // return ele[0];  [ you could use also filter. no need to stream, as array is already a stream! ]
+
         return element || null;
     }
 
