@@ -4,7 +4,8 @@
   "description": "typecript with playwright tests",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --headed && npx playwright show-report "
+    "test": "npx playwright test --headed && npx playwright show-report ",
+    "run": "ts-node sand-box/linkdedList.ts"
   },
   "author": "",
   "license": "ISC",

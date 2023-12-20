@@ -1,4 +1,4 @@
-async function retry<T>(block: () => Promise<T>, numOfRetry: number, interval: number): Promise<T> {
+export async function retry<T>(block: () => Promise<T>, numOfRetry: number, interval: number): Promise<T> {
     for (let i = 0;  i < numOfRetry; i++ ){
         try {
             const result = await block();
@@ -12,7 +12,7 @@ async function retry<T>(block: () => Promise<T>, numOfRetry: number, interval: n
 
     throw new Error("exceeds num of retries, went ");
 }
-async function blockFalse() :Promise<boolean> {
+export async function blockFalse() :Promise<boolean> {
     return false;
 }
 async function blockTrue() :Promise<boolean> {
