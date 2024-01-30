@@ -110,14 +110,14 @@ test.describe("Search Component", () => {
         expect(similarity >= threshold, "not similar due to high threshold").toBe(true);
     })
 
-    test(`adjust adults, expect adults in updated in rooms`, async ({browser}) => {
+    test(`adjust adults, expect adults are updated in rooms`, async ({browser}) => {
         // console.log("navigating to new url: ", roomUrl)
         // page
         // searchComp.increaseAdults()
         // searchComp.getSearchSummaryHashMap()
     })
 
-    test(`reserve`, async ({browser}) => {
+    test(`reserve room, expect ...`, async ({browser}) => {
         // console.log("navigating to new url: ", roomUrl)
         // page
         // listingComp.getHighestCardRate()

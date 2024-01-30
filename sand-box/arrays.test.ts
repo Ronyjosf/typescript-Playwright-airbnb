@@ -39,5 +39,24 @@ describe("arrays area", () => {
         let str = newArr.join(', ');
         console.log(str)
     })
+    it("reverse an array with for - loop", () =>{
+        let reverseArr = [];
+        for (let i = numArr.length-1; i >= 0; i--){
+            reverseArr.push(numArr[i]);
+        }
+        console.log(reverseArr);
+        let str = reverseArr.join(', ');
+        console.log(str)
+    })
+    it("reverse an array with forEach ", () =>{
+        let reverseArr = [];
+        numArr.forEach( e => reverseArr.push(e))
+        for (let i = numArr.length-1; i >= 0; i--){
+            reverseArr.push(numArr[i]);
+        }
+        console.log(reverseArr);
+        let str = reverseArr.join(', ');
+        console.log(str)
+    })
 
 })
