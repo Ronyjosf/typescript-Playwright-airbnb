@@ -4,10 +4,8 @@ class MyNode<T> {
 
     constructor(value: T) {
         this.value = value;
-
     }
 }
-
 class LinkedList<T> {
     head: MyNode<T>;
     tail: MyNode<T>;
